@@ -11,8 +11,8 @@ LABEL org.opencontainers.image.created=$BUILD_DATE \
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 RUN \
-  apk update \
-  apk upggrade \
+  #apk update \
+  #apk upggrade \
   apk add --no-cache mariadb && \
   TO_KEEP=$(echo " \
     etc/ssl/certs/ca-certificates.crt$ \
