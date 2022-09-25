@@ -5,7 +5,6 @@ ARG VCS_REF
 
 LABEL org.opencontainers.image.created=$BUILD_DATE \
   org.opencontainers.image.title="mariadb-alpine" \
-  org.opencontainers.image.description="A MariaDB container suitable for development" \
   org.opencontainers.image.license="MIT"
 
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
