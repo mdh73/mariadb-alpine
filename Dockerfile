@@ -40,8 +40,8 @@ RUN \
   mkdir /run/mysqld && \
   chown mysql:mysql /etc/my.cnf.d/ /run/mysqld /usr/share/mariadb/mysql_system_tables_data.sql
 
-COPY sh/resolveip.sh /usr/bin/resolveip
-COPY sh/run.sh /run.sh
+COPY resolveip.sh /usr/bin/resolveip
+COPY run.sh /run.sh
 
 COPY my.cnf /tmp/my.cnf
 
